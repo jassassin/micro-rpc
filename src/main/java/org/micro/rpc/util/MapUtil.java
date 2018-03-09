@@ -1,6 +1,7 @@
 package org.micro.rpc.util;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -22,5 +23,13 @@ public final class MapUtil {
 	 */
 	public static final <K, V> ConcurrentHashMap<K, V> newConcurrentHashMap(){
 		return new ConcurrentHashMap<K, V>();
+	}
+	
+	public static final <K,V> boolean isEmpty(Map<K, V> map){
+		return map == null || map.size() == 0;
+	} 
+	
+	public static final <K,V> boolean isNotEmpty(Map<K, V> map){
+		return !isEmpty(map);
 	}
 }
