@@ -1,2 +1,0 @@
-http\://www.micro-rpc.com/schema/rpc-service=org.micro.rpc.spring.ProviderServiceNamespaceHandler
-http\://www.micro-rpc.com/schema/rpc-reference=org.micro.rpc.spring.InvokerServiceNamespaceHandler
